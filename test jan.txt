@@ -1,0 +1,140 @@
+1.
+package com.xworkz.six_jan_test.test;
+
+import java.util.Arrays;
+
+public class Check_Min_Max {
+	
+	public int min(int a[])
+	{
+		Arrays.sort(a);
+		int result=a[0];
+		return result;
+	}
+	public  int max(int a[])
+	{
+		Arrays.sort(a);
+		int result=a[a.length-1];
+		return result;
+	}
+	
+	public static void main(String[] args) {
+		
+		Check_Min_Max check=new Check_Min_Max();
+		
+		int arr[]= {45,333,76,29,900,23,474,654,29,454};
+		System.out.println("Given List is: "+Arrays.toString(arr));
+		System.out.println("Minimum no in a list: "+check.min(arr));
+		System.out.println("Maxiumum number in a list: "+check.max(arr));
+			
+	}
+}
+
+2.
+package com.xworkz.six_jan_test.test;
+
+import java.util.Scanner;
+
+public class Timmy_Sarah {
+
+	public boolean check(int n)
+	
+	{
+		if(n%2!=0)
+		{
+			System.out.println("they are in love");
+			
+		}
+		else
+		{
+			System.out.println("they are not in love");
+			
+		}
+		return false;
+	}
+	
+	
+	public static void main(String[] args) {
+
+		Timmy_Sarah t=new Timmy_Sarah();
+		System.out.println("enter number of petals");
+		Scanner sc=new Scanner(System.in);
+		t.check(sc.nextInt());
+		}
+}
+
+3.
+In java Converting the subclass type into super class type is called genaralized classess or genaralization
+or upcasting.
+In java Converting the super class type into sub class type is called specialized classess or specialization
+or Downcasting.
+
+4.
+a)when the classes or declared as final,this type of classes and its properties cannot be inherited.
+
+b)string and Math classes,
+	java.lang.String and java.lang.math
+
+c)delegation
+
+
+5.
+  collection.sort();
+  stream.sorted();
+  comparator and comparable
+  
+6.
+* arrayList is slow comapring linked list.
+  linked list is fast comapring arrayList.
+  
+* array list uses dynamic array to store the elements.
+  LinkedList uses doubly linked list to store the elements.
+  
+* arraylist is a list but linked list act has a both list and queue.
+   
+* manipulation esy in linkedlist, storing and accessing the data esy in array list.
+  
+  
+7.
+*  iterator traverse only forward direction,ListIterator traverse both forward and backward direction.
+*  iterator use for only traverse list and set etc but ListIterator traverse only for list.
+*  methods in iterator next(),remove(),hasnext(), methods in Listiterator is next(),previous(),hasnext(),etc.
+  
+8.
+covariant method
+ it is overriding method,it hels to avoid the downcasting.
+
+methodOverriding in java
+ it is a feature that provieds method implementation to subclass that are alardy available in a parent class is called 
+ method overriding.
+ 
+9.
+ when the garbage collector doesn't recognize the unused objects 
+ and the objects are remaining in the memory it reduces the amount of memory allocation that memory is wasted this scenario is called
+ memory leakage.
+ 
+10.
+ Method overloading is called static polymorphism,it is a creation of methods with the same name
+ and different parameters. 
+ method overriding is called dynamic polymorphism, it is a feature that provieds method implementation to subclass 
+ that are alardy available in a parent class is called 
+ 
+11. Private keyWord
+ 
+ 
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
